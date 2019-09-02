@@ -15,7 +15,7 @@ public class Conej03 {
         if(m3 <= 150){
             JOptionPane.showMessageDialog(null, "Abona: "+m3150);
         } else {
-            abona = (m3 * 1.50) - m3150;
+            abona = (m3 * 1.50);
             JOptionPane.showMessageDialog(null, "Abona: "+abona);
         }  
     }
