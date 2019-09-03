@@ -29,9 +29,13 @@ public class Conaniej04 {
         } else if (n1 == n2 && n1 == n3) {
             JOptionPane.showMessageDialog(null, "los tres numeros son iguales");
         } else if (n1 == n2 && n1 > n3) {
-            JOptionPane.showMessageDialog(null, "n1: "+n1+"\nn2: "+n2+ "\nn3: +n3");
-        } else if ( n1 == n3) {
-            
+            JOptionPane.showMessageDialog(null, "n1 y n2: "+n1+" "+n2+ "\nn3: "+n3);
+        } else if (n1 == n2 && n1 < n3) {
+            JOptionPane.showMessageDialog(null, "n3: "+n3+"\nn1 y n2: "+n1+" "+n2);
+        } else if (n1 == n3 && n1 > n2){
+            JOptionPane.showMessageDialog(null, "n1 y n3: "+n1+" "+n3+"\nn2: "+n2);
+        } else if (n1 == n3 && n1 < n2){
+            JOptionPane.showMessageDialog(null, "n2: "+n2+"\nn1 y n3: "+n1+" "+n3);
         }
         
         
