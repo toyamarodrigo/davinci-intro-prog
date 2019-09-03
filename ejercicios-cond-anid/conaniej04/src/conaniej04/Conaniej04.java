@@ -7,6 +7,7 @@ public class Conaniej04 {
     public static void main(String[] args) {
 
         // Dados 3 números enteros ordenarlos en forma descendente.
+        // Solo usando if statements
         
         int n1, n2, n3;
         
