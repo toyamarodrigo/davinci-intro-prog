@@ -20,12 +20,12 @@ public class Conaniej02 {
         n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 1: "));
         n2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2: "));
         n3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 3: "));
-        sum = n1 + n2 + n3;
-        mult = n1 * n2 * n3;
         
         if ( n1 > n2 && n1 < n3 ) {
+            sum = n1 + n2 + n3;
             JOptionPane.showMessageDialog(null, "Total:(suma) " +sum);
         } else {
+            mult = n1 * n2 * n3;
             JOptionPane.showMessageDialog(null, "Total:(multi) " +mult);
         }
         

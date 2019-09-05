@@ -22,8 +22,11 @@ public class Conaniej03 {
         } else {
             JOptionPane.showMessageDialog(null, "C es el mayor: "+C);
         }
+
+        // Otra manera
         
-        
+        int max = Math.max(Math.max(A, B), C);
+        JOptionPane.showMessageDialog(null, "El mayor es: "+max);
     }
     
 }
