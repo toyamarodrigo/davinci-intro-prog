@@ -6,9 +6,9 @@ public class Conej05 {
 
     public static void main(String[] args) {
         
-        String preg1 = "Cual es la raiz cuadrada de 144?";
-        String preg2 = "Quien fundo BsAs?";
-        String preg3 = "Cual es la capital de Francia?";
+        final String preg1 = "Cual es la raiz cuadrada de 144?";
+        final String preg2 = "Quien fundo BsAs?";
+        final String preg3 = "Cual es la capital de Francia?";
         
         int res1;
         String res2, res3;
@@ -18,9 +18,26 @@ public class Conej05 {
         res2 = JOptionPane.showInputDialog(preg2);
         res3 = JOptionPane.showInputDialog(preg3);
         
-        if(res1 == 12){ cont += 1; }
-        if("Don Pedro de Mendoza".equalsIgnoreCase(res2)){ cont += 1; }
-        if("Paris".equalsIgnoreCase(res3)){ cont += 1; }
+        if(res1 == 12){
+            cont += 1; 
+            JOptionPane.showMessageDialog(null, "Correcto!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Incorrecto!");
+        }
+        
+        if("Don Pedro de Mendoza".equalsIgnoreCase(res2)){
+            cont += 1;
+            JOptionPane.showMessageDialog(null, "Correcto!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Incorrecto!");
+        }
+        
+        if("Paris".equalsIgnoreCase(res3)){
+            cont += 1;
+            JOptionPane.showMessageDialog(null, "Correcto!");
+        } else {
+            JOptionPane.showMessageDialog(null, "Incorrecto!");
+        }
         
         JOptionPane.showMessageDialog(null, "Acertaste: " +cont);
         
