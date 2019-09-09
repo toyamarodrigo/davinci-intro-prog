@@ -26,17 +26,17 @@ public class Conaniej05 {
         totalpreg = Integer.parseInt(JOptionPane.showInputDialog("Ingrese total de preguntas: "));
         bienpreg = Integer.parseInt(JOptionPane.showInputDialog("Ingrese cantidad de preguntas correctas: "));
         
-        if (bienpreg > totalpreg) { JOptionPane.showMessageDialog(null, "preguntas correctas no pueden ser mayor a total de preguntas"); }
-        
-        if(bienpreg >= (totalpreg*90)/100){
+        if (bienpreg > totalpreg) { 
+            JOptionPane.showMessageDialog(null, "preguntas correctas no pueden ser mayor a total de preguntas"); 
+        } else if(bienpreg <= (totalpreg*90)/100){
             JOptionPane.showMessageDialog(null, "Nivel máximo \nRespuestas correctas: "+bienpreg);
         } else if (bienpreg >= (totalpreg*75)/100 && bienpreg < (totalpreg*90)/100){
             JOptionPane.showMessageDialog(null, "Nivel medio \nRespuestas correctas: "+bienpreg);
         } else if (bienpreg >= (totalpreg*50)/100 && bienpreg < (totalpreg*75)/100){
             JOptionPane.showMessageDialog(null, "Nivel regular \nRespuestas correctas: "+bienpreg);
         } else if (bienpreg > (totalpreg*50)/100){
-            JOptionPane.showMessageDialog(null, "Fuera de nivel \nRespuestas correctas: "+bienpreg);
-        }
+            JOptionPane.showMessageDialog(null, "Fuera de nivel \nRespuestas correctas: "+0);
+        } 
     }
     
 }

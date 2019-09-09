@@ -12,7 +12,7 @@ public class Conaniej02 {
         otro caso se multiplicaran.
         */
         
-        // n1 > n2 y n1 < n3 = n1 + n2 + n3
+        // si n1 > n2 y n1 < n3 => n1 + n2 + n3
         // sino n1 * n2 * n3
         
         int n1,n2,n3,sum,mult;

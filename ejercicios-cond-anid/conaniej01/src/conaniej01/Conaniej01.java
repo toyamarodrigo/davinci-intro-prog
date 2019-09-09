@@ -6,6 +6,12 @@ public class Conaniej01 {
 
     public static void main(String[] args) {
         
+        
+        /*
+        Dado un sueldo de trabajador y categoria A B o C, indicar cuanto
+        aumento tiene el trabajador.
+        */
+        
         // A = 15%
         // B = 10%
         // C = 5%
