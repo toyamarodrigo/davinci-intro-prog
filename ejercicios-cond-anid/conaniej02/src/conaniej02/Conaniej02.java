@@ -15,20 +15,31 @@ public class Conaniej02 {
         // si n1 > n2 y n1 < n3 => n1 + n2 + n3
         // sino n1 * n2 * n3
         
-        int n1,n2,n3,sum,mult;
+        int n1,n2,n3,tot;
         
         n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 1: "));
         n2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 2: "));
         n3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero 3: "));
         
         if ( n1 > n2 && n1 < n3 ) {
-            sum = n1 + n2 + n3;
-            JOptionPane.showMessageDialog(null, "Total:(suma) " +sum);
+            tot = n1 + n2 + n3;
+            JOptionPane.showMessageDialog(null, "Total:(suma) " +tot);
         } else {
-            mult = n1 * n2 * n3;
-            JOptionPane.showMessageDialog(null, "Total:(multi) " +mult);
+            tot = n1 * n2 * n3;
+            JOptionPane.showMessageDialog(null, "Total:(multi) " +tot);
         }
         
+        /*
+        if (n1 > n2){
+            if (n1 < n3) {
+                tot = n1 + n2 + n3;
+            } else {
+                tot = n1 * n2 * n3;
+            }
+            tot = n1 * n2 * n3;
+        }
+        JOptionPane.showMessageDialog(null, "Total:(suma) " +tot);
+        */
     }
     
 }

@@ -15,13 +15,33 @@ public class Conaniej03 {
         B = Integer.parseInt(JOptionPane.showInputDialog("Ingrese valor B: "));
         C = Integer.parseInt(JOptionPane.showInputDialog("Ingrese valor C: "));
      
-        if ( A > B && A > C ){
+        /*
+        if ( A >= B && A >= C ){
             JOptionPane.showMessageDialog(null, "A es el mayor: "+A);
-        } else if ( B > A && B > C ) {
+        } else if ( B >= A && B >= C ) {
             JOptionPane.showMessageDialog(null, "B es el mayor: "+B);
         } else {
             JOptionPane.showMessageDialog(null, "C es el mayor: "+C);
         }
+        */
+        
+        if (A >= B) {
+            if (A >= C) {
+                JOptionPane.showMessageDialog(null, "A mayor "+A);
+            } else {
+                JOptionPane.showMessageDialog(null, "C mayor "+C);
+            }
+        } else {
+            if (B>=C) {
+                JOptionPane.showMessageDialog(null, "B mayor "+B);
+            } else {
+                JOptionPane.showMessageDialog(null, "C mayor "+C);
+            }
+        } 
+        
+        
+        
+        
 
         /*
         // Otra manera

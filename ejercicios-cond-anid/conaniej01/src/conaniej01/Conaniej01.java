@@ -22,16 +22,22 @@ public class Conaniej01 {
         sueldo = Double.parseDouble(JOptionPane.showInputDialog("Ingrese sueldo de trabajor: "));
         cat = JOptionPane.showInputDialog("Ingrese categoria del trabajor: (A,B,C)");
         
-        catA = sueldo + (sueldo*15)/100;
-        catB = sueldo + (sueldo*10)/100;
-        catC = sueldo + (sueldo*5)/100;
+        // catA = sueldo + (sueldo*15)/100;
+        // catB = sueldo + (sueldo*10)/100;
+        // catC = sueldo + (sueldo*5)/100;
+        
+        catA = sueldo + (sueldo*0.15);
+        catB = sueldo + (sueldo*0.10);
+        catC = sueldo + (sueldo*0.05);
         
         if(cat.equalsIgnoreCase("a")) {
             JOptionPane.showMessageDialog(null, "Sueldo categoria A: " + catA);
         } else if (cat.equalsIgnoreCase("b")) {
             JOptionPane.showMessageDialog(null, "Sueldo categoria B: " + catB);
-        } else {
+        } else if (cat.equalsIgnoreCase("c")) {
             JOptionPane.showMessageDialog(null, "Sueldo categoria C: " + catC);
+        } else {
+            JOptionPane.showMessageDialog(null, "Categoria invalida");
         }
         
         
