@@ -26,7 +26,6 @@ public class Conaniej01 {
         catB = sueldo + (sueldo*10)/100;
         catC = sueldo + (sueldo*5)/100;
         
-        
         if(cat.equalsIgnoreCase("a")) {
             JOptionPane.showMessageDialog(null, "Sueldo categoria A: " + catA);
         } else if (cat.equalsIgnoreCase("b")) {
