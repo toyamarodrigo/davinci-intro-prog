@@ -13,7 +13,9 @@ public class Conaniej04 {
         n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero1: "));
         n2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero2: "));
         n3 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero3: "));
-
+        
+        // Good implementation
+        /*
         if (n1 >= n2 && n1 >= n3 && n2 >= n3) {
             JOptionPane.showMessageDialog(null, "Orden descendente: \nn1: " + n1 + "\nn2: " + n2 + "\nn3: " + n3);
         } else if (n1 >= n2 && n1 >= n3 && n2 <= n3) {
@@ -27,9 +29,73 @@ public class Conaniej04 {
         } else if (n3 >= n1 && n3 >= n2 && n1 >= n2) {
             JOptionPane.showMessageDialog(null, "Orden descendente: \nn3: " + n3 + "\nn1: " + n1 + "\nn2: " + n2);
         }
+         */
+ 
+        // Worst Implementation
+        /*
+        if (n1 >= n2) {
+            if (n1 >= n3) {
+                if (n2 >= n3) {
+                    JOptionPane.showMessageDialog(null, "Orden descendente: \nn1: " + n1 + "\nn2: " + n2 + "\nn3: " + n3);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Orden descendente: \nn1: " + n1 + "\nn3: " + n3 + "\nn2: " + n2);
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Orden descendente: \nn3: " + n3 + "\nn1: " + n1 + "\nn2: " + n2);
+            }
+        } else {
+            if (n2 >= n1) {
+                if (n2 >= n3) {
+                    if (n1 >= n3) {
+                        JOptionPane.showMessageDialog(null, "Orden descendente: \nn2: " + n2 + "\nn1: " + n1 + "\nn3: " + n3);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Orden descendente: \nn2: " + n2 + "\nn3: " + n3 + "\nn1: " + n1);
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Orden descendente: \nn3: " + n3 + "\nn2: " + n2 + "\nn1: " + n1);
+                }
 
-        //Swaping
+            } else {
+                if (n3 >= n1) {
+                    if (n3 >= n2) {
+                        if (n1 >= n2) {
+                            JOptionPane.showMessageDialog(null, "Orden descendente: \nn3: " + n3 + "\nn1: " + n1 + "\nn2: " + n2);
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Orden descendente: \nn3: " + n3 + "\nn2: " + n2 + "\nn1: " + n1);
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Orden descendente: \nn2: " + n2 + "\nn3: " + n3 + "\nn1: " + n1);
+                    }
+                }
+            }
+        }
+         */
         
+        // Better implementation than worst
+        if (n1 >= n2) {
+            if (n1 >= n3) {
+                if (n2 >= n3) {
+                    JOptionPane.showMessageDialog(null, "Orden descendente: \nn1: " + n1 + "\nn2: " + n2 + "\nn3: " + n3);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Orden descendente: \nn1: " + n1 + "\nn3: " + n3 + "\nn2: " + n2);
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Orden descendente: \nn3: " + n3 + "\nn1: " + n1 + "\nn2: " + n2);
+            }
+        } else {
+            if (n2 >= n3) {
+                if (n1 >= n3) {
+                    JOptionPane.showMessageDialog(null, "Orden descendente: \nn2: " + n2 + "\nn1: " + n1 + "\nn3: " + n3);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Orden descendente: \nn2: " + n2 + "\nn3: " + n3 + "\nn1: " + n1);
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Orden descendente: \nn3: " + n3 + "\nn2: " + n2 + "\nn1: " + n1);
+            }
+        }
+
+        // Best implementation
+        //Swaping
 //        /* 
 //            n1 = 1 
 //            n2 = 2
