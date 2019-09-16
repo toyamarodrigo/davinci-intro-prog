@@ -26,46 +26,34 @@ public class Conaniej05 {
 
         totalpreg = Double.parseDouble(JOptionPane.showInputDialog("Ingrese total de preguntas: "));
         bienpreg = Double.parseDouble(JOptionPane.showInputDialog("Ingrese cantidad de preguntas correctas: "));
+
         /*
         if (bienpreg > totalpreg) { 
             JOptionPane.showMessageDialog(null, "preguntas correctas no pueden ser mayor a total de preguntas"); 
         } else if(bienpreg <= (totalpreg*0.90) && bienpreg < totalpreg){
             JOptionPane.showMessageDialog(null, "Nivel máximo \nRespuestas correctas: "+bienpreg);
-        } else if (bienpreg >= (totalpreg*0.75) && bienpreg < (totalpreg*0.90){
+        } else if (bienpreg >= (totalpreg*0.75) && bienpreg < (totalpreg*0.90)){
             JOptionPane.showMessageDialog(null, "Nivel medio \nRespuestas correctas: "+bienpreg);
-        } else if (bienpreg >= (totalpreg*0.50) && bienpreg < (totalpreg*0.75){
+        } else if (bienpreg >= (totalpreg*0.50) && bienpreg < (totalpreg*0.75)){
             JOptionPane.showMessageDialog(null, "Nivel regular \nRespuestas correctas: "+bienpreg);
-        } else if (bienpreg > (totalpreg*0.50){
+        } else if (bienpreg > (totalpreg*0.50)){
             JOptionPane.showMessageDialog(null, "Fuera de nivel \nRespuestas correctas: "+0);
         } 
          */
         
-        // Worst implementation
         
+        // Worst implementation
         if (bienpreg > totalpreg) {
             JOptionPane.showMessageDialog(null, "preguntas correctas no pueden ser mayor a total de preguntas");
-        } else {
-            if (bienpreg >= (totalpreg * 0.90)) {
-                if (bienpreg <= totalpreg) {
-                    JOptionPane.showMessageDialog(null, "Nivel máximo \nRespuestas correctas: " + bienpreg);
-                }
-            } else {
-                if (bienpreg >= (totalpreg * 0.75)) {
-                    if (bienpreg < (totalpreg * 0.90)) {
-                        JOptionPane.showMessageDialog(null, "Nivel medio \nRespuestas correctas: " + bienpreg);
-                    }
-                } else {
-                    if (bienpreg >= (totalpreg * 0.50)) {
-                        if (bienpreg < (totalpreg * 0.75)) {
-                            JOptionPane.showMessageDialog(null, "Nivel regular \nRespuestas correctas: " + bienpreg);
-                        }
-                    } else {
-                        if (bienpreg < (totalpreg * 0.50)) {
-                            JOptionPane.showMessageDialog(null, "Fuera de nivel \nRespuestas correctas: " + bienpreg);
-                        }
-                    }
-                }
-            }
+        } else if (bienpreg >= (totalpreg * 0.90)) {
+                JOptionPane.showMessageDialog(null, "Nivel máximo \nRespuestas correctas: " + bienpreg);
+        } else if (bienpreg >= (totalpreg * 0.75)) {
+                JOptionPane.showMessageDialog(null, "Nivel medio \nRespuestas correctas: " + bienpreg);
+        } else if (bienpreg >= (totalpreg * 0.50)) {
+                JOptionPane.showMessageDialog(null, "Nivel regular \nRespuestas correctas: " + bienpreg);
+        } else if (bienpreg < (totalpreg * 0.50)) {
+            JOptionPane.showMessageDialog(null, "Fuera de nivel \nRespuestas correctas: " + bienpreg);
         }
+
     }
 }
