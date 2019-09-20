@@ -6,6 +6,27 @@ public class JuevosPersonajesFamosos {
 
     public static void main(String[] args) {
 
+        /*
+        Armar un juego con personajes famosos. 
+        Se le mostrara una lista de personajes al usuario:
+        
+            Susana Giménez
+            Diego Maradona
+            Carlos Menem
+            Lilita Carrió
+            Domingo Sarmiento
+        
+         y este seleccionara uno de ellos, de acuerdo al personaje elegido, 
+        contestara las siguientes preguntas por si o no, en este orden:
+        
+            - Esta  vivo?
+            - Es mujer?
+            - Es politico ?
+        
+        Al finalizar la computadora debe indicarle de acuerdo a las respuestas, 
+        cual es el personaje elegido por el usuario
+        */
+        
         String pjs, preg1, preg2, preg3, res;
 
         pjs = "Susana Giménez "
