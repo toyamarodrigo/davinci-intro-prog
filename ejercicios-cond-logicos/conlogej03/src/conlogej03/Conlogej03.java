@@ -12,7 +12,7 @@ public class Conlogej03 {
         double n1, n2, div;
 
         n1 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese n1: "));
-        n2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese n1: "));
+        n2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese n2: "));
 
         if (n1 > n2 && n2 != 0) {
             div = n1 / n2;

@@ -11,16 +11,16 @@ public class Conlogej02 {
         “jubilado”. Si la categoría es menor o jubilado se le realiza un 25% de 
         descuento.
         */
-        int entrada;
+        double entrada;
         String res;
         
-        entrada = Integer.parseInt(JOptionPane.showInputDialog("Ingrese precio de entrada: "));
+        entrada = Double.parseDouble(JOptionPane.showInputDialog("Ingrese precio de entrada: "));
         res = JOptionPane.showInputDialog("Ingrese categoria (menor, activo o jubilado): ");
         
         
         if(!res.equalsIgnoreCase("activo")){
-            entrada = entrada - (entrada*25)/100;
-            JOptionPane.showMessageDialog(null, "Entrada + desc 30%: $"+entrada);
+            entrada = entrada - (entrada * 0.25);
+            JOptionPane.showMessageDialog(null, "Entrada + desc 25%: $"+entrada);
         } else {
             JOptionPane.showMessageDialog(null, "Entrada: $"+entrada);
         }
