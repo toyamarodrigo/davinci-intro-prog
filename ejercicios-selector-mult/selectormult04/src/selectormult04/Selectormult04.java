@@ -7,7 +7,7 @@ public class Selectormult04 {
 	public static void main(String[] args) {
 		
 		/*
-		 * Se pide deterinar si los alumnos pueden acceder a la beca o
+		 * Se pide determinar si los alumnos pueden acceder a la beca o
 		 * no de acuerdo a su promedio:
 		 * 
 		 * Carrera				Cuatri			Promedio
@@ -46,6 +46,8 @@ public class Selectormult04 {
 				} else {
 					JOptionPane.showMessageDialog(null, "No tiene beca, promedio menor a 9. \nPromedio: "+prom);
 				}
+			} else {
+				JOptionPane.showMessageDialog(null, "No accede a beca");				
 			}
 			break;
 		case 2:
@@ -55,6 +57,8 @@ public class Selectormult04 {
 				} else {
 					JOptionPane.showMessageDialog(null, "No tiene beca, promedio menor a 9,2. \nPromedio: "+prom);
 				}
+			} else {
+				JOptionPane.showMessageDialog(null, "No accede a beca");				
 			}
 			break;
 		case 3:
@@ -64,6 +68,8 @@ public class Selectormult04 {
 				} else {
 					JOptionPane.showMessageDialog(null, "No tiene beca, promedio menor a 8,8. \nPromedio: "+prom);
 				}
+			} else {
+				JOptionPane.showMessageDialog(null, "No accede a beca");				
 			}
 			break;
 		case 4:
@@ -73,6 +79,8 @@ public class Selectormult04 {
 				} else {
 					JOptionPane.showMessageDialog(null, "No tiene beca, promedio menor a 9. \nPromedio: "+prom);
 				}
+			} else {
+				JOptionPane.showMessageDialog(null, "No accede a beca");				
 			}
 			break;
 		case 5:
@@ -82,6 +90,8 @@ public class Selectormult04 {
 				} else {
 					JOptionPane.showMessageDialog(null, "No tiene beca, promedio menor a 8,8. \nPromedio: "+prom);
 				}
+			} else {
+				JOptionPane.showMessageDialog(null, "No accede a beca");				
 			}
 			break;
 		case 6:
@@ -91,6 +101,8 @@ public class Selectormult04 {
 				} else {
 					JOptionPane.showMessageDialog(null, "No tiene beca, promedio menor a 9,2. \nPromedio: "+prom);
 				}
+			} else {
+				JOptionPane.showMessageDialog(null, "No accede a beca");				
 			}
 			break;
 		}
