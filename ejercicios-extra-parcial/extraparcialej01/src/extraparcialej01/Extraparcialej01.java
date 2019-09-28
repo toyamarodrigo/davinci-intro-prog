@@ -33,6 +33,7 @@ public class Extraparcialej01 {
         Del 22 de diciembre al 20 de enero
         */
 
+    	/*
         int dia;
         String mes;
         
@@ -85,6 +86,54 @@ public class Extraparcialej01 {
             JOptionPane.showMessageDialog(null, "Sagitario");
         } else if(mes.equalsIgnoreCase("diciembre") && (dia >= 22 && dia <= 31) || 
                 mes.equalsIgnoreCase("enero") && (dia >= 1 && dia <= 20)) {
+            // Capricornio            
+            JOptionPane.showMessageDialog(null, "Capricornio");
+        }
+        */
+        
+        
+        int date;
+        String d,m;
+        
+        m = JOptionPane.showInputDialog("Ingrese mes de nacimiento: ");
+        d = JOptionPane.showInputDialog("Ingrese dia de nacimiento: ");
+        date = Integer.parseInt(m+d);
+        
+        if((date >= 121 && date <= 131) || (date >= 201 && date <= 218)) {
+            // Acuario
+            JOptionPane.showMessageDialog(null, "Acuario");
+            
+        } else if((date >= 219 && date <= 229) || (date >= 301 && date <= 320)) {
+            // Piscis
+            JOptionPane.showMessageDialog(null, "Piscis");
+        } else if((date >= 321 && date <= 331) || (date >= 401 && date <= 420)) {
+            // Aries
+            JOptionPane.showMessageDialog(null, "Aries");
+        } else if((date >= 421 && date <= 430) || (date >= 501 && date <= 521)) {
+            // Tauro
+            JOptionPane.showMessageDialog(null, "Tauro");
+        } else if((date >= 522 && date <= 531) || (date >= 601 && date <= 630)) {
+            // Geminis
+            JOptionPane.showMessageDialog(null, "Geminis");
+        } else if((date >= 622 && date <= 631) || (date >= 701 && date <= 722)) {
+            // Cancer
+            JOptionPane.showMessageDialog(null, "Cancer");
+        } else if((date >= 723 && date <= 731) || (date >= 801 && date <= 823)) {
+            // Leo
+            JOptionPane.showMessageDialog(null, "Leo");
+        } else if((date >= 824 && date <= 831) || (date >= 901 && date <= 923)) {
+            // Virgo
+            JOptionPane.showMessageDialog(null, "Virgo");
+        } else if((date >= 924 && date <= 930) || (date >= 1001 && date <= 1023)) {
+            // Libra
+            JOptionPane.showMessageDialog(null, "Libra");
+        } else if((date >= 1024 && date <= 1031) || (date >= 1101 && date <= 1122)) {
+            // Escorpio
+            JOptionPane.showMessageDialog(null, "Escorpio");
+        } else if((date >= 1123 && date <= 1130) || (date >= 1201 && date <= 1221)) {
+            // Sagitario
+            JOptionPane.showMessageDialog(null, "Sagitario");
+        } else if((date >= 1222 && date <= 1231) || (date >= 101 && date <= 120)) {
             // Capricornio            
             JOptionPane.showMessageDialog(null, "Capricornio");
         }
