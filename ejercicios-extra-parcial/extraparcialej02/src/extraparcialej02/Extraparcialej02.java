@@ -80,8 +80,8 @@ public class Extraparcialej02 {
 			vcand2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese votos para candidato " + cand2));
 			if (vcand1 > vcand2) {
 				JOptionPane.showMessageDialog(null, "Ganador: " + cand1 + "\nVotos: " + vcand1);
-			} else if (vcand2 < vcand1) {
-				JOptionPane.showMessageDialog(null, "Ganador: " + "\nVotos: " + vcand2);
+			} else if (vcand2 > vcand1) {
+				JOptionPane.showMessageDialog(null, "Ganador: " + cand2 +"\nVotos: " + vcand2);
 			} else {
 				JOptionPane.showMessageDialog(null, "se anula balotage x empate");
 			}
