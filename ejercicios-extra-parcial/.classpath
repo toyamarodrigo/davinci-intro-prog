@@ -6,6 +6,7 @@
 	<classpathentry kind="src" path="extraparcialej04/src"/>
 	<classpathentry kind="src" path="extraparcialej05a/src"/>
 	<classpathentry kind="src" path="extraparcialej05b/src"/>
+	<classpathentry kind="src" path="extraparcialej05c"/>
 	<classpathentry kind="lib" path="extraparcialej04/dist/extraparcialej04.jar"/>
 	<classpathentry kind="output" path="extraparcialej04/build/classes"/>
 </classpath>
