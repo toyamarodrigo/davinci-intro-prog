@@ -10,7 +10,6 @@ public class Extraparcialej05b {
         
     	int year,res;
     	
-    	
     	year = Integer.parseInt(JOptionPane.showInputDialog("Ingrese año de nacimiento: "));
     	res = year % 12;
     	
