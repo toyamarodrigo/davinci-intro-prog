@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="extraparcialej01/src"/>
+	<classpathentry kind="src" path="extraparcialej02/src"/>
+	<classpathentry kind="src" path="extraparcialej04/src"/>
+	<classpathentry kind="src" path="extraparcialej05a/src"/>
+	<classpathentry kind="src" path="extraparcialej05b/src"/>
+	<classpathentry kind="lib" path="extraparcialej04/dist/extraparcialej04.jar"/>
+	<classpathentry kind="output" path="extraparcialej04/build/classes"/>
+</classpath>
