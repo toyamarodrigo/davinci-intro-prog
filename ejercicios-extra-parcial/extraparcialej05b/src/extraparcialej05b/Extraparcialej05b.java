@@ -10,9 +10,12 @@ public class Extraparcialej05b {
         
     	int year,res;
     	
-    	year = Integer.parseInt(JOptionPane.showInputDialog("Ingrese año de nacimiento: "));
+    	year = Integer.parseInt(JOptionPane.showInputDialog("Ingrese aï¿½o de nacimiento: "));
     	res = year % 12;
     	
+        // Profesora quiere que use OR
+        
+        /*
     	if (year >= 0 && year <= 2020) {
     		if (res == 0) {
     			JOptionPane.showMessageDialog(null, "Mono");
@@ -40,8 +43,10 @@ public class Extraparcialej05b {
     			JOptionPane.showMessageDialog(null, "Oveja");
     		}
     	} else {
-    		JOptionPane.showMessageDialog(null, "Error año de nacimiento");
+    		JOptionPane.showMessageDialog(null, "Error aï¿½o de nacimiento");
     	}
+        */
+        
     }
     
 }
