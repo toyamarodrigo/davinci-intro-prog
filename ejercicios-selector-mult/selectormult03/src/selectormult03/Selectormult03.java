@@ -22,7 +22,9 @@ public class Selectormult03 {
 		 * le paga un 7% menos del valor indicado en la tabla a cada categoria.
 		 * 
 		 * */
-        int cat, hs_trabajo, hs_extra, toths;
+    	
+    	String msj="";
+        int cat, hs_trabajo, hs_extra;
         double preciohs, precioextra, totprecio;
         cat = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Categoria: \n1 - 2 - 3 "));
         hs_trabajo = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Horas Trabajadas: "));
@@ -35,16 +37,36 @@ public class Selectormult03 {
                 totprecio = preciohs + precioextra;
                 if (hs_extra > 30) {
                     totprecio -= totprecio * 0.07;
-                } else {
-                    
                 }
-
+                msj = "Sueldo de operario: " + totprecio +
+                		"\nHoras trabajadas: " + hs_trabajo + " precio: "+preciohs+
+                		"\nHoras extra: " + hs_extra + " precio: "+precioextra;
                 break;
             case 2:
+                preciohs = hs_trabajo * 17;
+                precioextra = hs_extra * 24; 
+                totprecio = preciohs + precioextra;
+                if (hs_extra > 30) {
+                    totprecio -= totprecio * 0.07;
+                }
+                msj = "Sueldo de operario: " + totprecio +
+                		"\nHoras trabajadas: " + hs_trabajo + " precio: "+preciohs+
+                		"\nHoras extra: " + hs_extra + " precio: "+precioextra;
                 break;
             case 3:
+                preciohs = hs_trabajo * 21;
+                precioextra = hs_extra * 34; 
+                totprecio = preciohs + precioextra;
+                if (hs_extra > 30) {
+                    totprecio -= totprecio * 0.07;
+                }
+                msj = "Sueldo de operario: " + totprecio +
+                		"\nHoras trabajadas: " + hs_trabajo + " precio: "+preciohs+
+                		"\nHoras extra: " + hs_extra + " precio: "+precioextra;
                 break;
         }
+        
+        JOptionPane.showMessageDialog(null, msj);
 
     }
 
