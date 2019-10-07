@@ -9,9 +9,9 @@ public class Selectormult01 {
         int op;
         double n1, n2, tot;
         
-        op = Integer.parseInt(JOptionPane.showInputDialog("Ingrese tipo de operacion: \n1)Suma \n2)Resta \n3)Mult \n4)Div"));
         n1 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero1: "));
         n2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese numero2: "));
+        op = Integer.parseInt(JOptionPane.showInputDialog("Ingrese tipo de operacion: \n1)Suma \n2)Resta \n3)Mult \n4)Div"));
         
         
         switch(op){
@@ -36,7 +36,6 @@ public class Selectormult01 {
                 }
                 break;
             default:
-                tot = 0;
                 JOptionPane.showMessageDialog(null, "Operacion invalida");
                 break;
         }
