@@ -2,7 +2,7 @@ package selectormult02;
 
 import javax.swing.JOptionPane;
 
-public class selectormult02 {
+public class Selectormult02 {
 
 	public static void main(String[] args) {
 
