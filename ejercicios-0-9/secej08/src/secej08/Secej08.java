@@ -21,7 +21,7 @@ public class Secej08 {
         final double ars = 57.6;
         
         usd = Double.parseDouble(JOptionPane.showInputDialog("Ingrese dolares: "));
-        convert = usd * 57.6;
+        convert = usd * ars;
         
         JOptionPane.showMessageDialog(null, "Dolares: " +usd
                 +"\nPesos: " +convert);
