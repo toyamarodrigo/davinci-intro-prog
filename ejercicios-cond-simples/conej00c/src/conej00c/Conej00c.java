@@ -5,7 +5,7 @@ import java.util.Random;
 public class Conej00c {
 
     public static void main(String[] args) {
-        int m, dado1, dado2, carta;
+        int dado1, dado2, carta;
         double dado3, sueldo, peso;
         Random random = new Random();
         dado1 = random.nextInt(6) + 1; // dado entre 1 y 6
