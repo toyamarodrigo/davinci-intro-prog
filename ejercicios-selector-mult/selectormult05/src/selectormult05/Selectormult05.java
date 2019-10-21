@@ -1,7 +1,9 @@
-package app;
+package selectormult05;
 
-public class App {
-    public static void main(String[] args) throws Exception {
+public class Selectormult05 {
+
+public static void main(String[] args) throws Exception {
+    
         /*
         Una empresa utiliza el siguiente tipo de comercializacion para sus productos. Se tienen 2 productos A y B, el producto A tiene tres tipos de fragancias diferentes (primavera, marino y otoño) y el proucto B tiene tres tipos de presentaciones diferentes (pequeño, mediano y grande)
         COSTO
@@ -18,7 +20,6 @@ public class App {
         Indicar valor de la compra, si solo se puede comprar un solo tipo de producto y si la cantidad comprada supera los $100, se debe realizar un descuento del 10% sobre el total de la compra
         */
 
-
-
     }
+    
 }
