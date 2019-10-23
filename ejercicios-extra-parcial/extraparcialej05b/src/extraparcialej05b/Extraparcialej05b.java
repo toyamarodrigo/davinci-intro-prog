@@ -8,14 +8,15 @@ public class Extraparcialej05b {
 
         /* Determinar el signo del horoscopo chino deacuerdo al año de nacimiento */
         
-    	int year,res;
+        /*
+    	int year, res;
     	
     	year = Integer.parseInt(JOptionPane.showInputDialog("Ingrese a�o de nacimiento: "));
     	res = year % 12;
     	
         // Profesora quiere que use OR
         
-        /*
+        
     	if (year >= 0 && year <= 2020) {
     		if (res == 0) {
     			JOptionPane.showMessageDialog(null, "Mono");
