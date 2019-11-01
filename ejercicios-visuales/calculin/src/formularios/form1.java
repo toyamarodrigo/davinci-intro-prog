@@ -69,6 +69,7 @@ public class form1 extends javax.swing.JFrame {
             }
         });
 
+        txtFieldResultado.setEditable(false);
         txtFieldResultado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFieldResultadoActionPerformed(evt);
