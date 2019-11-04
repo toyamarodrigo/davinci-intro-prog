@@ -15,7 +15,7 @@ public class Repeticionej02 {
         int numero, tot = 0;
 
         for (int i = 1; i <= 20; i++) {
-            numero = random.nextInt(100);
+            numero = random.nextInt(101);
             if (numero == 0) {
                 tot++;
                 System.out.println("numero" + i + ": " + tot);

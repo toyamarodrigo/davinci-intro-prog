@@ -15,7 +15,7 @@ public class Repeticionej05 {
             - el sueldo máximo y el nombre de la persona de sueldo máximo
             - total de sueldos pagados
          */
-        double personas, sueldo, max = 0;
+        double personas, sueldo, max = Double.MIN_NORMAL;
         int tot1 = 0, tot2 = 0, tot3 = 0, tot4 = 0, tot5 = 0, total = 0, persona = 0;
         Random random = new Random();
 
@@ -34,7 +34,7 @@ public class Repeticionej05 {
                 tot3++;
             } else if (sueldo > 1000 && sueldo <= 2000) {
                 tot4++;
-            } else if (sueldo > 2000) {
+            } else {
                 tot5++;
             }
 
@@ -53,8 +53,8 @@ public class Repeticionej05 {
                 + "\nPersonas con sueldo entre 1001 y 2000: " + tot4
                 + "\nPersonas con sueldo mayor a 2001: " + tot5);
 
-        JOptionPane.showMessageDialog(null, "Persona num " + persona
-                + "Sueldo: " + max);
+        JOptionPane.showMessageDialog(null, "Persona num" + persona
+                + "\nSueldo: " + max);
 
         JOptionPane.showMessageDialog(null, "Total de sueldos: " + total);
 

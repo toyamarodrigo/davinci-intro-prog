@@ -11,14 +11,14 @@ public class Repeticionej04 {
         Dados n números enteros, calcular el menor de ellos
         */
         
-        int n1, num, menor = 0;
+        int n1, num, menor = Integer.MAX_VALUE;
         
         Random random = new Random();
         
         n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero: "));
         
         for (int i = 1; i <= n1; i++) {
-            num = random.nextInt();
+            num = random.nextInt(11);
             
             if(num < menor){
                 menor = num;

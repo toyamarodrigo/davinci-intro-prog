@@ -18,7 +18,7 @@ public class Repeticionej03 {
 
         for (int i = 1; i <= 100; i++) {
 
-            num = random.nextInt(100);
+            num = random.nextInt(101);
 
             if (num <= 25) {
                 tot1++;
@@ -26,7 +26,7 @@ public class Repeticionej03 {
                 tot2++;
             } else if (num <= 75) {
                 tot3++;
-            } else if (num <= 100) {
+            } else {
                 tot4++;
             }
             System.out.println("num" + i + ": " + num);
