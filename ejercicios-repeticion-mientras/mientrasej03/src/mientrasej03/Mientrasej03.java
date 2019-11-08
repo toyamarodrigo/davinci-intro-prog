@@ -3,8 +3,7 @@ package mientrasej03;
 public class Mientrasej03 {
 
     public static void main(String[] args) {
-
-
+        
         /*
         Se desea calcular el puntaje de un equipo de fútbol al finalizar el 
         campeonato. Se distinguen con la letra “G” los partidos ganados, 
@@ -15,6 +14,7 @@ public class Mientrasej03 {
         de partidos ganados, el de perdidos y el de empatados
         */
         
+        int c1=0, c2=0, c3=0;
         
         
 
