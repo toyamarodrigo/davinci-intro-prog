@@ -13,7 +13,7 @@ public class Arraysej03 {
         medio en que se ha corrido la carrera.
          */
         
-        // CORREGIR
+        // CORREGIR ARRAY OUT OF INDEX
         
         int i, tot = 0, may = Integer.MIN_VALUE, min =Integer.MAX_VALUE;
         int[] tiempo = new int[10];
