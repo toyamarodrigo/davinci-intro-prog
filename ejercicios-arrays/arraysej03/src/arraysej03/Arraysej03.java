@@ -24,7 +24,7 @@ public class Arraysej03 {
             tot = tot + tiempo[i];
         }
 
-        for (i = 0; i<=tiempo.length-1 ; i++) {
+        for (i=0; i<=tiempo.length-1 ; i++) {
             for (int j=i+1 ; j<=tiempo.length-1 ; j++) {
                 if (tiempo[j] > max) {
                     max = tiempo[j];
