@@ -18,18 +18,18 @@ public class Arraysej02 {
         int i;
         double tot1=0, tot2=0;
         
-        int[] nota1 = new int[5];
-        int[] nota2 = new int[5];
+        int[] curso1 = new int[5];
+        int[] curso2 = new int[5];
         
         Random random = new Random();
         for(i=0 ; i <= 4 ; i++) {
-            nota1[i] = random.nextInt(10)+1;
-            nota2[i] = random.nextInt(10)+1;
-            System.out.println(nota1[i]);
-            System.out.println(nota2[i]);
+            curso1[i] = random.nextInt(10)+1;
+            curso2[i] = random.nextInt(10)+1;
+            System.out.println(curso1[i]);
+            System.out.println(curso2[i]);
             
-            tot1 = tot1 + nota1[i];
-            tot2 = tot2 + nota2[i];
+            tot1 = tot1 + curso1[i];
+            tot2 = tot2 + curso2[i];
         }
         
         tot1 = tot1 / 5;
